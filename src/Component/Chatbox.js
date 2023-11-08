@@ -93,7 +93,7 @@ const Chatbox = (props) => {
     "Are you consulting a doctor or counselor? (Yes/No) ",
     "Would you like to speak in detail with school appointed authority? (Yes/No)",
     "Would you like the institute to make any special arrangements? (Yes/No) ",
-    "Please provide detail in few words (allow 256 character text)",
+    "Please provide detail in few words",
   ];
   const [divElement, setDivElement] = useState([
     <MessageTemp
