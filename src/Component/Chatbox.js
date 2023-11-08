@@ -91,8 +91,8 @@ const Chatbox = (props) => {
     "Your Gender? Male/Female/Others",
     "Is your health situation a regular issue? (Yes/No)",
     "Are you consulting a doctor or counselor? (Yes/No) ",
-    "Would you like to speak in detail with school appointed authority? (yes/No)",
-    "Would you like the institute to make any special arrangements? (yes/No) ",
+    "Would you like to speak in detail with school appointed authority? (Yes/No)",
+    "Would you like the institute to make any special arrangements? (Yes/No) ",
     "Please provide detail in few words (allow 256 character text)",
   ];
   const [divElement, setDivElement] = useState([
@@ -265,7 +265,7 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
-                  message={"Please give ans in range 1 to 4."}
+                  message={"Please give ans in range 1 to 6."}
                 />,
                 <MessageTemp
                   IAmSending={true}
@@ -345,7 +345,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer only yes/no"}
+                message={"Please answer only Yes/No"}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -451,7 +451,7 @@ const Chatbox = (props) => {
                   IAmSending={true}
                   scrollableRef={bottomRef}
                   message={
-                    "please provide correct phone numner(i.e of 10 digits)"
+                    "Please provide correct phone number(i.e of 10 digits)"
                   }
                 />,
               ]);
@@ -507,7 +507,7 @@ const Chatbox = (props) => {
                 IAmSending={true}
                 scrollableRef={bottomRef}
                 message={
-                  "please provide correct phone numner(i.e of 10 digits)"
+                  "Please provide correct phone number(i.e of 10 digits)"
                 }
               />,
             ]);
@@ -544,7 +544,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"please provide correct email address(Ex. abc@bcd.ckd"}
+                message={"Please provide correct email address(Ex. abc@bcd.ckd"}
               />,
             ]);
           } else {
@@ -580,7 +580,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"please provide correct email address(Ex. abc@bcd.ckd"}
+                message={"Please provide correct email address(Ex. abc@bcd.ckd"}
               />,
             ]);
           } else {
@@ -670,7 +670,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer only yes/no"}
+                message={"Please answer only Yes/No"}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -717,7 +717,7 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
-                  message={"Please answer gender in male/female/other"}
+                  message={"Please answer gender in Male/Female/Others"}
                 />,
               ]);
             }
@@ -753,7 +753,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer gender in male/female/other"}
+                message={"Please answer gender in Male/Female/Others"}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -799,7 +799,7 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
-                  message={"Please answer only yes/no"}
+                  message={"Please answer only Yes/No"}
                 />,
                 <MessageTemp
                   IAmSending={true}
@@ -854,7 +854,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer in yes/no"}
+                message={"Please answer in Yes/No"}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -900,7 +900,7 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
-                  message={"Please answer only yes/no"}
+                  message={"Please answer only Yes/No"}
                 />,
                 <MessageTemp
                   IAmSending={true}
@@ -941,7 +941,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer in yes/no."}
+                message={"Please answer in Yes/No."}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -972,6 +972,15 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
+                  message={`${
+                    userResponse.toLowerCase() === "no"
+                      ? "Your request is acknowledged. Institute will not take any action on the subject as requested"
+                      : "Your request is acknowledged"
+                  } `}
+                />,
+                <MessageTemp
+                  IAmSending={true}
+                  scrollableRef={bottomRef}
                   message={predefinedQuestionsForDepression[11]}
                 />,
               ]);
@@ -987,7 +996,7 @@ const Chatbox = (props) => {
                 <MessageTemp
                   IAmSending={true}
                   scrollableRef={bottomRef}
-                  message={"Please answer in yes/no."}
+                  message={"Please answer in Yes/No."}
                 />,
                 <MessageTemp
                   IAmSending={true}
@@ -1035,6 +1044,15 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
+                message={`${
+                  userResponse.toLowerCase() === "no"
+                    ? "Your request is acknowledged. Institute will not take any action on the subject as requested"
+                    : "Your request is acknowledged"
+                } `}
+              />,
+              <MessageTemp
+                IAmSending={true}
+                scrollableRef={bottomRef}
                 message={predefinedQuestionsForDepression[12]}
               />,
             ]);
@@ -1050,7 +1068,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer in yes/no."}
+                message={"Please answer in Yes/No."}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -1150,7 +1168,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"please answer in yes/no"}
+                message={"please answer in Yes/No"}
               />,
               <MessageTemp
                 IAmSending={true}
@@ -1196,7 +1214,7 @@ const Chatbox = (props) => {
               <MessageTemp
                 IAmSending={true}
                 scrollableRef={bottomRef}
-                message={"Please answer in yes/no"}
+                message={"Please answer in Yes/No"}
               />,
               <MessageTemp
                 IAmSending={true}
